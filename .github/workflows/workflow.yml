@@ -1,0 +1,12 @@
+name: {my_first_workflow}
+
+on:
+	push:
+		branches: ["main"]
+	pull_request:
+		branches:["main"]
+
+jobs:
+	build:
+		runs-on: ubuntu-latesst
+		container: python:3.9-slim
